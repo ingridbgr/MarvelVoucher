@@ -1,0 +1,200 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+}
+
+h1,h2 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.comic-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.comic-card {
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 1rem 0;
+  background-color: #ffffff;
+}
+
+.comic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.voucher-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.comic-card:hover {
+  transform: scale(1.05);
+}
+.comic-card {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.comic-card img {
+  width: 100px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.comic-card h3 {
+  margin: 0; /* Remove default margin */
+}
+
+.comic-card p {
+  font-size: 0.8rem;
+  color: inherit;
+  margin: 5px 0;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+}
+
+.comic-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.comic-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.9rem;
+}
+
+.comic-form input[type="text"],
+.comic-form input[type="color"] {
+  padding: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comic-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: 'Questrial', sans-serif;
+}
+
+.comic-form button:hover {
+  background-color: #0056b3;
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+select, input[type="text"], input[type="color"], button {
+  margin: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.comic-form {
+  padding: 20px; /* Add padding around the form */
+}
+
+.filter-container {
+  display: flex; /* Use flexbox to arrange items in a row */
+  align-items: center; /* Center items vertically */
+  background-color: #f0f0f0; /* Background color for the filter area */
+  padding: 15px; /* Padding inside the filter area */
+  border-radius: 8px; /* Rounded corners for the filter area */
+  margin-bottom: 20px; /* Space below the filter area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.filter-item {
+  margin-right: 20px; /* Space between filter items */
+}
+
+.filter-item label {
+  display: block; /* Make labels block-level for better alignment */
+  margin-bottom: 5px; /* Space below labels */
+}
